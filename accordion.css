@@ -1,0 +1,33 @@
+.accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: blue;
+    padding: 20px;
+}
+
+.accordion {
+    width: calc(33.33% - 20px); /* 33.33% width with 20px margin */
+    margin: 10px;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-checkbox:checked + .accordion-header + .accordion-content {
+    display: block;
+}
