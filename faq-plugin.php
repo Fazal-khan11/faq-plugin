@@ -129,7 +129,7 @@ function display_faqs_frontend() {
         echo '</script>';
         foreach ($faqs as $index => $faq) {
             $accordion_title = esc_html($faq['question']);
-            $accordion_content = wpautop(esc_html($faq['answer'])); /
+            $accordion_content = wpautop(esc_html($faq['answer'])); 
             echo '<div class="accordion">';
             echo '<input type="checkbox" id="accordion-' . $index . '" class="accordion-checkbox">';
             echo '<label for="accordion-' . $index . '" class="accordion-header">' . $accordion_title . '</label>';
